@@ -1,0 +1,13 @@
+"*":
+  editor:
+    invisibles: {}
+    fontFamily: "Hack"
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "94131431-3bcb-38c8-2663-a029122d4966"
+  welcome:
+    showOnStartup: false

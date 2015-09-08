@@ -1,0 +1,51 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
+# * https://atom.io/docs/latest/advanced/keymaps
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+'atom-text-editor.vim-mode.visual-mode':
+#  'j':      'vim-mode-visual-block:j'
+#  'k':      'vim-mode-visual-block:k'
+#  'h':      'vim-mode-visual-block:h'
+#  'l':      'vim-mode-visual-block:l'
+  'I':      'vim-mode-visual-block:I'
+  'A':      'vim-mode-visual-block:A'
+  'D':      'vim-mode-visual-block:D'
+  'C':      'vim-mode-visual-block:C'
+  'o':      'vim-mode-visual-block:o'
+  'escape': 'vim-mode-visual-block:escape'
+  'ctrl-c': 'core:copy'
+  'ctrl-v': 'core:paste'
+
+'atom-text-editor.vim-mode.command-mode':
+  'ctrl-q': 'vim-mode:activate-blockwise-visual-mode'
+  'ctrl-v': 'core:paste'
+
+'body':
+  'ctrl-v': 'core:paste'
+
+'atom-text-editor.vim-mode:not(.insert-mode)':
+  ';': 'vim-mode:move-to-last-character-of-line'
+  #'ctrl-c': 'vim-mode-visual-block:escape'
+  #'atom-text-editor.vim-mode:not(.insert-mode)':
