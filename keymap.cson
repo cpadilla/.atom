@@ -25,10 +25,6 @@
 # https://github.com/bevry/cson#what-is-cson
 
 'atom-text-editor.vim-mode.visual-mode':
-#  'j':      'vim-mode-visual-block:j'
-#  'k':      'vim-mode-visual-block:k'
-#  'h':      'vim-mode-visual-block:h'
-#  'l':      'vim-mode-visual-block:l'
   'I':      'vim-mode-visual-block:I'
   'A':      'vim-mode-visual-block:A'
   'D':      'vim-mode-visual-block:D'
@@ -38,14 +34,10 @@
   'ctrl-c': 'core:copy'
   'ctrl-v': 'core:paste'
 
-'atom-text-editor.vim-mode.command-mode':
-  'ctrl-q': 'vim-mode:activate-blockwise-visual-mode'
-  'ctrl-v': 'core:paste'
-
 'body':
   'ctrl-v': 'core:paste'
 
 'atom-text-editor.vim-mode:not(.insert-mode)':
   ';': 'vim-mode:move-to-last-character-of-line'
-  #'ctrl-c': 'vim-mode-visual-block:escape'
-  #'atom-text-editor.vim-mode:not(.insert-mode)':
+  'ctrl-q': 'vim-mode:activate-blockwise-visual-mode'
+  'ctrl-v': 'core:paste'
